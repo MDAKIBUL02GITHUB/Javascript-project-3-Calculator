@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Final Project 2 | Calculator</title>
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main_content">
+            <div class="frist_content">
+                <div class="project_name">
+                    <h1>Javascript Project-2 <br> Calculator</h1>
+                    <div class="pro_img">
+                        <img src="home_img1.jpg" alt="woner_pic">
+                    </div>
+                    <div class="pro_content">
+                        <h2>MD AKIBUL ISLAM</h2>
+                        <p>Web Designer and Developer</p>
+                        <button><a href="https://www.upwork.com/services/product/a-convert-psd-to-html-1436594679184101376?ref=project_share&tier=0" target="_blank">Contact Me</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="second_content">
+                <div class="time">
+                    <div class="calculator" id="calculator">
+                        <div class="top_bg" id="top_bg">
+                            <div class="apple">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                            <div class="color_change" id="color_change">
+                                <div class="white" id="c1st" onclick="color1Fun()"></div>
+                                <div class="white white_2" id="c2st" onclick="color2Fun()"></div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <input class="show_filed" id="show_filed">
+                        <div class="input_body" id="input_body">
+                            <div class="in_1">
+                                <button onclick="clearFun()">C</button>
+                                <button onclick="clearFun()">CE</button>
+                                <button onclick = "inputFun('%')">%</button>
+                                <button onclick = "inputFun('/')">/</button>
+                            </div>
+                            <div class="in_1">
+                                <button onclick = "inputFun(7)">7</button>
+                                <button onclick = "inputFun(8)">8</button>
+                                <button onclick = "inputFun(9)">9</button>
+                                <button onclick = "inputFun('*')">*</button>
+                            </div>
+                            <div class="in_1">
+                                <button onclick = "inputFun(4)">4</button>
+                                <button onclick = "inputFun(5)">5</button>
+                                <button onclick = "inputFun(6)">6</button>
+                                <button onclick = "inputFun('-')">-</button>
+                            </div>
+                            <div class="in_1">
+                                <button onclick = "inputFun(1)">1</button>
+                                <button onclick = "inputFun(2)">2</button>
+                                <button onclick = "inputFun(3)">3</button>
+                                <button onclick = "inputFun('+')">+</button>
+                            </div>
+                            <div class="in_1">
+                                <button onclick = "inputFun(0)">0</button>
+                                <button onclick = "inputFun('00')">00</button>
+                                <button onclick = "inputFun('.')">.</button>
+                                <button onclick ="result()" class="parmanent">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
